@@ -4,6 +4,37 @@ html, body {
     font-family: 'Source Sans 3', sans-serif;
 }
 
+/* typography */
+
+p {
+    margin: 0px;
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.poster-name {
+    font-weight: 700;
+}
+
+.poster-location {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* images */
+.logo {
+    width: 127px;
+}
+
+.user-avatar,
+.poster-avatar {
+    width: 34px;
+    border-radius: 50%;
+}
+
+/* layout */
 header {
     margin-top: 50px;
 }
@@ -23,43 +54,9 @@ header {
     border-bottom: 1px solid #C6C6C6;
 }
 
-.logo {
-    width: 127px;
-}
-
 .post-header {
     padding: 10px 15px;
     display: flex;
     align-items: center; 
     gap: 7px;
-}
-
-.user-avatar {
-    width: 34px;
-    border-radius: 50%;
-}
-
-.poster-avatar {
-    width: 34px;
-    border-radius: 50%;
-}
-
-p {
-    margin: 0px;
-}
-
-.poster-name {
-    color: #000;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.poster-location {
-    color: #000;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
