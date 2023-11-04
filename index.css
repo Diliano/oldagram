@@ -3,3 +3,24 @@ html, body {
     padding: 0;
 }
 
+.container {
+    width: 375px;
+    margin: 50px auto;
+    border: 1px solid black;
+}
+
+.header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 127px;
+}
+
+.user-avatar {
+    width: 34px;
+    border-radius: 50%;
+}
