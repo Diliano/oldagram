@@ -1,12 +1,18 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+header {
+    margin-top: 50px;
 }
 
 .container {
     width: 375px;
-    margin: 50px auto;
     border: 1px solid black;
+    box-sizing: border-box;
+    margin: 0px auto;
 }
 
 .header {
@@ -21,7 +27,39 @@ html, body {
     width: 127px;
 }
 
+.post-header {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center; 
+    gap: 7px;
+}
+
 .user-avatar {
     width: 34px;
     border-radius: 50%;
+}
+
+.poster-avatar {
+    width: 34px;
+    border-radius: 50%;
+}
+
+p {
+    margin: 0px;
+}
+
+.poster-name {
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.poster-location {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
