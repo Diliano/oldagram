@@ -24,6 +24,7 @@ p {
 }
 
 /* images */
+
 .logo {
     width: 127px;
 }
@@ -38,7 +39,23 @@ p {
     width: 100%;
 }
 
+.btn-image {
+    width: 25px;
+}
+
+/* buttons */
+
+button {
+    border: none;
+    background: transparent;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
 /* layout */
+
 header {
     margin-top: 50px;
 }
@@ -63,4 +80,8 @@ header {
     display: flex;
     align-items: center; 
     gap: 7px;
+}
+
+.btn-container {
+    padding: 15px 10px;  
 }
