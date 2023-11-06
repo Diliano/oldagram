@@ -33,3 +33,33 @@ const posts = [
         likes: 152
     }
 ];
+
+function createPostHTML(post) {
+    return `
+        <section>
+            <div class="container">
+                <div class="post-header">
+                    <img class="poster-avatar" src=${post.avatar} alt=${post.avatarAlt}>
+                    <div>
+                        <p>${post.name}</p>
+                        <p class="poster-location">${post.location}</p>
+                    </div>
+                </div>
+                <img class="post-image" src=${post.post} alt=${post.postAlt}>
+                <div class="btn-container">
+                    <button type="button" aria-label="like">
+                        <img class="btn-image" src="images/icon-heart.png" alt="">
+                    </button>
+                    <button type="button" aria-label="comment">
+                        <img class="btn-image" src="images/icon-comment.png" alt="">
+                    </button>
+                    <button type="button" aria-label="send direct message">
+                        <img class="btn-image" src="images/icon-dm.png" alt="">
+                    </button>                
+                </div>
+                <p class="like-count">${post.likes} likes</p>
+                <p class="post-caption">${post.username} <span class="caption-message">${post.caption}</span></p>
+            </div>
+        </section>
+    `;
+}
