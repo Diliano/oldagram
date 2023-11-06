@@ -34,6 +34,8 @@ const posts = [
     }
 ];
 
+const postsContainerEl = document.getElementById("posts-container");
+
 function createPostHTML(post) {
     return `
         <section>
@@ -63,3 +65,12 @@ function createPostHTML(post) {
         </section>
     `;
 }
+
+function renderPosts() {
+    for (let i = 0; i < posts.length; i++) {
+        const postHTML = createPostHTML(posts[i]);
+        postsContainerEl.innerHTML += postHTML;
+    }
+}
+
+renderPosts();
